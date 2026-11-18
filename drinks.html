@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natespresso Cafe | Drinks Availability</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <h2>Dashboard</h2><a class="" href="dashboard.html">Admin</a><a class="" href="shop-status.html">Shop Status</a><a
+        class="active" href="drinks.html">Drinks</a><a class="" href="pastry.html">Pastry/Silog</a><a class=""
+        href="#logout-confirmation">Logout</a>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-browser"><span></span><span></span><span></span></div>
+      <h1 class="admin-title centered">Menu</h1>
+      <section class="admin-menu-list">
+        <h2>Available Drinks</h2>
+
+        <div class="availability-admin-row">
+          <b>Iced Coffee</b>
+          <div class="availability-actions">
+            <input class="status-choice" type="radio" name="drinks-1" id="drinks-1-yes" checked>
+            <label class="mini-available" for="drinks-1-yes">Available</label>
+            <input class="status-choice" type="radio" name="drinks-1" id="drinks-1-no">
+            <label class="mini-unavailable" for="drinks-1-no">Unavailable</label>
+          </div>
+        </div>
+        <div class="availability-admin-row">
+          <b>Spanish Latte</b>
+          <div class="availability-actions">
+            <input class="status-choice" type="radio" name="drinks-2" id="drinks-2-yes" checked>
+            <label class="mini-available" for="drinks-2-yes">Available</label>
+            <input class="status-choice" type="radio" name="drinks-2" id="drinks-2-no">
+            <label class="mini-unavailable" for="drinks-2-no">Unavailable</label>
+          </div>
+        </div>
+        <div class="availability-admin-row">
+          <b>Cappuccino</b>
+          <div class="availability-actions">
+            <input class="status-choice" type="radio" name="drinks-3" id="drinks-3-yes" checked>
+            <label class="mini-available" for="drinks-3-yes">Available</label>
+            <input class="status-choice" type="radio" name="drinks-3" id="drinks-3-no">
+            <label class="mini-unavailable" for="drinks-3-no">Unavailable</label>
+          </div>
+        </div>
+        <div class="item-actions">
+          <button class="add-btn">Add</button>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="logout-confirmation" class="logout-overlay">
+    <div class="logout-dialog">
+      <h2>Are you sure?</h2>
+      <p>You will be no longer logged in on this website.</p>
+      <div class="logout-buttons">
+        <a class="logout-cancel" href="#">Cancel</a>
+        <a class="logout-yes" href="index.html">Log out</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

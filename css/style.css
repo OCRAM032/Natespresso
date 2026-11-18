@@ -1,0 +1,169 @@
+/* CSS layout follows the supplied Natespresso wireframe */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#3f281d;background:#fffaf0;background-image:radial-gradient(#eee9e0 1px,transparent 1px);background-size:20px 20px}
+.top{min-height:76px;padding:15px 4%;display:flex;align-items:center;justify-content:space-between;gap:15px;background:#fffaf0;border-bottom:1px solid #d8cdbd}
+.brand{font-size:18px;font-weight:bold;white-space:nowrap}.brand span{font-size:13px;font-weight:normal}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}nav a{color:#3f281d;text-decoration:none;font-size:14px;padding:6px 0}nav a:hover,nav a.selected{text-decoration:underline}
+.home,.menu-page,.simple-page{width:92%;max-width:1160px;margin:25px auto}
+.home-main{min-height:340px;padding:28px;display:flex;align-items:center;gap:35px;background:#fffdf7;border:2px solid #766b5e;border-radius:13px 13px 0 0}
+.home-text{flex:1;padding-left:8px}.home-text h1{font-size:36px;line-height:1.25;margin:8px 0 16px}.home-text p{font-size:18px;line-height:1.45;margin-bottom:22px}
+.outline{display:inline-block;color:#3f281d;text-decoration:none;border:2px solid #554538;border-radius:7px;padding:7px 23px;background:#fffaf0}
+.photo-placeholder{flex:1;height:220px;background:#e6d8c6;border-radius:8px;overflow:hidden}
+.photo-placeholder img,.menu-photo img,.about-photo img,.contact-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.shop-info{display:flex;justify-content:space-around;align-items:center;gap:15px;flex-wrap:wrap;padding:11px 18px;background:#f0e1ca;border:2px solid #766b5e;border-top:0;border-radius:0 0 13px 13px}.shop-info p{margin:4px}
+.green{color:#27934e}.red{color:#b3433c}
+.menu-page h1{font-size:29px;margin:10px 5px 15px}.menu-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.menu-card{background:#fffdf7;border:2px solid #b5a797;border-radius:10px;padding:10px}.menu-photo{height:190px;background:#e6d8c6;border-radius:7px;overflow:hidden}
+.menu-card h2{font-size:18px;text-align:center;margin:12px 0}.menu-items{font-size:13px}.menu-items h3{font-size:14px;margin:12px 0 5px;padding-bottom:4px;border-bottom:1px solid #d7cbbb}.menu-items h3 small{font-size:11px;font-weight:normal}
+.menu-items p{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:6px 0;padding-bottom:5px;border-bottom:1px solid #eee8df}.menu-items p span{flex:1}.menu-items b{white-space:nowrap}.menu-items .available,.menu-items .not-available{display:inline-block;white-space:nowrap;padding:4px 8px;font-size:10px}.note{font-size:11px;color:#725e4b}
+.availability{margin-top:22px;padding:15px;border:2px solid #b5a797;border-radius:10px;background:#fffdf7}.availability h2{margin:3px 0 12px;font-size:20px}
+.availability-row{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.availability-row div{border:1px solid #d3c7b8;border-radius:8px;padding:13px 8px;background:#f8f1e7;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.available,.not-available{border-radius:18px;padding:6px 13px;color:white;font-size:12px}.available{background:#319a58}.not-available{background:#b33d35}
+.about-layout,.contact-layout{display:flex;align-items:center;gap:28px;padding:28px;min-height:350px;background:#fffdf7;border:2px solid #766b5e;border-radius:12px}
+.about-photo,.contact-photo{flex:1;height:400px;background:#e6d8c6;border-radius:14px;overflow:hidden}.about-words{flex:1}.about-words h1,.contact-details h1{font-size:28px}.about-words p{font-size:20px;line-height:1.5}
+.contact-details{flex:1;padding:0 18px 0 5px;border-right:1px solid #cbbda9}.contact-details p{line-height:1.5;font-size:15px}
+.admin-page{min-height:100vh;display:flex;align-items:center;justify-content:center}.admin-box{width:320px;padding:28px;text-align:center;border:2px solid #766b5e;border-radius:10px;background:#fffdf7}
+.admin-box form{display:flex;flex-direction:column;text-align:left;gap:9px}input{padding:9px;border:1px solid #b5a797;border-radius:5px}button{padding:10px;color:white;background:#4b2d1c;border:0;border-radius:5px}
+.dashboard{display:flex;min-height:100vh}.dashboard aside{width:220px;padding:25px;color:white;background:#80654e}.dashboard section{flex:1;padding:30px}.dashboard section p{padding:12px;border:1px solid #d6c8b7;background:#fffdf7}
+@media(max-width:700px){.top{flex-direction:column}nav{justify-content:center;gap:14px}.home-main,.about-layout,.contact-layout{flex-direction:column;align-items:stretch}.photo-placeholder,.about-photo,.contact-photo{width:100%;height:190px;flex:none}.menu-columns,.availability-row{grid-template-columns:1fr}.contact-details{border-right:0;border-bottom:1px solid #cbbda9;padding-bottom:15px}.dashboard{flex-direction:column}.dashboard aside{width:100%}}
+
+.login-page{min-height:calc(100vh - 76px);display:flex;align-items:center;justify-content:center;padding:25px}
+.login-card{width:360px;padding:28px 35px;text-align:center;background:#fffdf7;border:1.5px solid #8c7a68;border-radius:10px;box-shadow:0 2px 5px #d8cbbb}
+.login-cup{font-size:42px;margin-bottom:3px}.login-card h1{font-size:22px;margin:4px 0 22px}
+.login-card form{display:flex;flex-direction:column;gap:8px;text-align:left}.login-card label{font-size:13px;margin-top:4px}
+.login-card input{width:100%;padding:9px 10px;background:#fffaf3}.login-card button{margin:8px auto 0;width:55%;cursor:pointer;background:#80654e}
+.admin-body{min-height:100vh}.admin-shell{display:flex;min-height:100vh;background:#fffaf0}
+.admin-sidebar{width:155px;flex-shrink:0;padding:18px 12px;background:#8b735f;color:#fff}
+.admin-sidebar h2{font-size:19px;margin:0 0 22px}.admin-sidebar a{display:block;color:#fff;text-decoration:none;font-size:13px;padding:11px 8px;border-bottom:1px solid rgba(255,255,255,.13)}
+.admin-sidebar a:hover,.admin-sidebar a.active{background:#715943;text-decoration:underline}
+.admin-content{position:relative;flex:1;min-width:0;padding:24px 30px 35px}
+.admin-browser{position:absolute;left:0;right:0;top:0;height:17px;border-bottom:1px solid #b9ad9f;background:#fffdf7;padding-left:10px}
+.admin-browser span{display:inline-block;width:6px;height:6px;margin:5px 2px;background:#4b3528;border-radius:50%}
+.admin-topline{display:flex;justify-content:flex-end;font-size:12px;margin:0 0 35px}
+.admin-title{font-size:25px;margin:0 0 24px}.admin-title.centered{text-align:center;border-bottom:1px solid #c9bcae;padding-bottom:14px}
+.summary-cards{display:flex;gap:18px;justify-content:center;margin:20px auto 30px;max-width:650px}
+.summary-card{width:145px;min-height:130px;background:#fffdf7;border:1px solid #d0c2b2;border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:9px}
+.summary-card strong{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#b76e66;color:#fff;font-size:25px}
+.summary-card span{font-size:12px;line-height:1.35}
+.history-box{max-width:720px;margin:0 auto;background:#fffdf7;border:1px solid #c8b9a8}.history-box h2{font-size:17px;margin:0;padding:9px 12px;background:#eee3d5}
+.history-box p{display:flex;justify-content:space-between;gap:12px;margin:0;padding:9px 12px;border-top:1px solid #e6ddd2;font-size:12px}
+.history-box small{white-space:nowrap;color:#806b59}
+.status-buttons{display:flex;justify-content:center;gap:22px;margin:65px auto 45px}
+.status-buttons a{display:block;width:135px;text-align:center;padding:11px 15px;color:white;text-decoration:none;border-radius:25px;font-weight:bold;font-size:17px}
+.status-open{background:#329653}.status-close{background:#d83b4b}.status-buttons .chosen{outline:3px solid #e4c9c4}
+.current-status{text-align:right;font-size:12px;margin-top:65px}
+.admin-menu-list{max-width:580px;margin:0 auto;background:#fffaf2}.admin-menu-list h2{font-size:15px;margin:0;padding:10px;border-bottom:1px solid #c8b9a8}
+.availability-admin-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid #e4d9cb;font-size:13px}
+.availability-actions{display:flex;gap:5px}.availability-actions a{padding:5px 9px;border-radius:15px;color:white;text-decoration:none;font-size:10px}
+.mini-available{background:#319653}.mini-unavailable{background:#c94b51}
+.confirm-note{max-width:280px;margin:0 auto;padding:15px;background:#fffdf7;border:1px solid #8b735f;border-radius:7px;text-align:center;font-size:12px;box-shadow:0 2px 8px #c9bcae}
+.confirm-note a{display:inline-block;margin:10px 4px 0;padding:5px 13px;background:#80654e;color:white;text-decoration:none;border-radius:4px}
+@media(max-width:650px){.admin-shell{flex-direction:column}.admin-sidebar{width:100%;padding:10px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.admin-sidebar h2{width:100%;margin:0 0 5px}.admin-sidebar a{padding:8px 7px;font-size:11px}.admin-content{padding:28px 12px}
+.summary-cards{gap:7px}.summary-card{width:32%;min-height:110px}.summary-card strong{width:48px;height:48px}
+.availability-admin-row{align-items:flex-start;flex-direction:column}.status-buttons{gap:10px;margin:40px auto}.status-buttons a{width:115px}}
+
+
+.availability-actions button{border:0;cursor:pointer;font-family:Arial,sans-serif;opacity:.55;transition:opacity .15s, transform .15s}
+.availability-actions button.selected{opacity:1;outline:2px solid #4b3528;outline-offset:2px;transform:scale(1.03)}
+.availability-actions button:focus{outline:2px solid #4b3528;outline-offset:2px}
+.admin-category{font-size:15px;margin:15px 10px 7px;padding-bottom:5px;border-bottom:1px solid #d7cbbb}
+.admin-subcategory{font-size:12px;margin:10px 12px 5px;color:#725e4b}
+.availability-admin-row b small{font-size:11px;font-weight:normal;color:#806b59;margin-left:5px}
+.menu-items .menu-status{display:inline-block;white-space:nowrap;padding:4px 8px;font-size:10px;border-radius:18px;color:white}
+.menu-items .menu-status.available{background:#319a58}
+.menu-items .menu-status.not-available{background:#b33d35}
+@media(max-width:650px){.availability-actions{flex-wrap:wrap}.availability-admin-row{align-items:flex-start}}
+
+.availability-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.availability-actions .status-choice {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+.availability-actions label {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    background: #9a8a7b;
+    opacity: .58;
+    border: 2px solid transparent;
+}
+.availability-actions .status-choice:checked + .mini-available {
+    background: #319653;
+    opacity: 1;
+    border-color: #246e3c;
+}
+.availability-actions .status-choice:checked + .mini-unavailable {
+    background: #c94b51;
+    opacity: 1;
+    border-color: #96343a;
+}
+.availability-actions .status-choice:focus + label {
+    outline: 2px solid #4b3528;
+    outline-offset: 2px;
+}
+@media (max-width: 650px) {
+    .availability-actions { flex-wrap: wrap; }
+}
+
+
+.logout-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(0,0,0,.35);
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.logout-overlay:target{display:flex}
+.logout-dialog{
+  width:100%;
+  max-width:520px;
+  padding:20px 22px;
+  background:#fffdf7;
+  border:2px solid #c8b9a8;
+  border-radius:12px;
+  box-shadow:0 5px 18px rgba(50,30,15,.25);
+  color:#3f281d;
+}
+.logout-dialog h2{font-size:22px;margin:0 0 4px}
+.logout-dialog p{font-size:16px;margin:0 0 16px}
+.logout-buttons{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.logout-buttons a{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:6px;
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+.logout-cancel{background:#80654e}
+.logout-yes{background:#b3433c}
+.logout-buttons a:hover{opacity:.88}
+.item-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+    position: static;
+}
+
+.add-btn,
+.remove-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+}

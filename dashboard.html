@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natespresso Cafe | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <h2>Dashboard</h2><a class="active" href="dashboard.html">Admin</a><a class="" href="shop-status.html">Shop
+        Status</a><a class="" href="drinks.html">Drinks</a><a class="" href="pastry.html">Pastry/Silog</a><a class=""
+        href="#logout-confirmation">Logout</a>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-browser"><span></span><span></span><span></span></div>
+      <h1 class="admin-title">Dashboard</h1>
+      <div class="summary-cards">
+        <div class="summary-card"><strong>3</strong><span>Available<br>Drinks &amp; Pastry</span></div>
+        <div class="summary-card"><strong>3</strong><span>Unavailable<br>Drinks &amp; Pastry</span></div>
+        <div class="summary-card"><strong>1</strong><span>Users/Admin</span></div>
+      </div>
+      <section class="history-box">
+        <h2>History</h2>
+        <p><span>Admin1 Turned off Iced Spanish Latte (Drinks)</span><small>1:35pm</small></p>
+        <p><span>Admin1 Turned off Waffle (Pastry)</span><small>1:30pm</small></p>
+        <p><span>Admin1 Turned on Shop Status</span><small>1:40pm</small></p>
+        <p><span>Admin1 logged in</span><small>1:30pm</small></p>
+      </section>
+    </main>
+  </div>
+  <div id="logout-confirmation" class="logout-overlay">
+    <div class="logout-dialog">
+      <h2>Are you sure?</h2>
+      <p>You will be no longer logged in on this website.</p>
+      <div class="logout-buttons">
+        <a class="logout-cancel" href="#">Cancel</a>
+        <a class="logout-yes" href="index.html">Log out</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
