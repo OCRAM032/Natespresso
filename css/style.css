@@ -24,7 +24,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, .brand {
+h1,
+h2,
+.brand {
   font-family: 'Fraunces', Georgia, serif;
 }
 
@@ -725,6 +727,7 @@ button {
   text-decoration: none;
   border-radius: 6px;
 }
+
 @media (max-width: 700px) {
   .top {
     flex-direction: column;
@@ -813,94 +816,132 @@ button {
     width: 125px;
   }
 }
+
 .availability-actions {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.availability-actions .status-choice {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-}
-.availability-actions label {
-    display: inline-block;
-    padding: 6px 11px;
-    border-radius: 16px;
-    color: #fff;
-    font-size: 10px;
-    cursor: pointer;
-    background: #9a8a7b;
-    opacity: .58;
-    border: 2px solid transparent;
-}
-.availability-actions .status-choice:checked + .mini-available {
-    background: #319653;
-    opacity: 1;
-    border-color: #246e3c;
-}
-.availability-actions .status-choice:checked + .mini-unavailable {
-    background: #c94b51;
-    opacity: 1;
-    border-color: #96343a;
-}
-.availability-actions .status-choice:focus + label {
-    outline: 2px solid #4b3528;
-    outline-offset: 2px;
-}
-@media (max-width: 650px) {
-    .availability-actions { flex-wrap: wrap; }
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.logout-overlay{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:9999;
-  background:rgba(0,0,0,.35);
-  align-items:center;
-  justify-content:center;
-  padding:18px;
+.availability-actions .status-choice {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
-.logout-overlay:target{display:flex}
-.logout-dialog{
-  width:100%;
-  max-width:520px;
-  padding:20px 22px;
-  background:#fffdf7;
-  border:2px solid #c8b9a8;
-  border-radius:12px;
-  box-shadow:0 5px 18px rgba(50,30,15,.25);
-  color:#3f281d;
+
+.availability-actions label {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  background: #9a8a7b;
+  opacity: .58;
+  border: 2px solid transparent;
 }
-.logout-dialog h2{font-size:22px;margin:0 0 4px}
-.logout-dialog p{font-size:16px;margin:0 0 16px}
-.logout-buttons{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
-.logout-buttons a{
-  display:inline-block;
-  padding:8px 18px;
-  border-radius:6px;
-  color:white;
-  text-decoration:none;
-  font-size:15px;
+
+.availability-actions .status-choice:checked+.mini-available {
+  background: #319653;
+  opacity: 1;
+  border-color: #246e3c;
 }
-.logout-cancel{background:#80654e}
-.logout-yes{background:#b3433c}
-.logout-buttons a:hover{opacity:.88}
+
+.availability-actions .status-choice:checked+.mini-unavailable {
+  background: #c94b51;
+  opacity: 1;
+  border-color: #96343a;
+}
+
+.availability-actions .status-choice:focus+label {
+  outline: 2px solid #4b3528;
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .availability-actions {
+    flex-wrap: wrap;
+  }
+}
+
+.logout-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, .35);
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.logout-overlay:target {
+  display: flex
+}
+
+.logout-dialog {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px 22px;
+  background: #fffdf7;
+  border: 2px solid #c8b9a8;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(50, 30, 15, .25);
+  color: #3f281d;
+}
+
+.logout-dialog h2 {
+  font-size: 22px;
+  margin: 0 0 4px
+}
+
+.logout-dialog p {
+  font-size: 16px;
+  margin: 0 0 16px
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap
+}
+
+.logout-buttons a {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.logout-cancel {
+  background: #80654e
+}
+
+.logout-yes {
+  background: #b3433c
+}
+
+.logout-buttons a:hover {
+  opacity: .88
+}
+
 .item-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 6px;
-    margin-left: 23px;
-    margin-bottom: 10px;
-    position: static;
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  margin-left: 23px;
+  margin-bottom: 10px;
+  position: static;
 }
 
 .add-btn,
 .remove-btn {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 25px;
-    font-size: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
 }
